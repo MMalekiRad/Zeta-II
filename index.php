@@ -6,7 +6,7 @@
 /*
 Plugin Name: Zeta II
 Plugin URI: http://mmalekirad.ir
-Description: Zeta II, Personal Plugin For My Personal WebSite, This Plugin Remove Un Necessary Codes And Ready WP's Website
+Description: Zeta II, Personal Plugin For My Personal WebSite, This Plugin Remove UnNecessary Codes And Ready WP's Website
 For Publish On Real Environments.
 Author: MMalekiRad
 Version: 1.0.0
