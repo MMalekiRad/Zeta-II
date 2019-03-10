@@ -42,24 +42,26 @@ function shapeSpace_remove_version_scripts_styles( $src ) {
 }
 
 ##################################################################################
-function red_c_page() {
-	wp_redirect( site_url() );
+function red_c_page()
+{
+	wp_redirect(site_url() . '/login');
 	exit;
 }
 
-add_action( 'wp_logout', "red_c_page" );
-add_action( 'wp_login_failed', "red_c_page" );
+add_action('wp_logout', "red_c_page");
+add_action('wp_login_failed', "red_c_page");
 
-function red_wp_admin() {
+function red_wp_admin()
+{
 	global $pagenow;
-	if ( $pagenow === "wp-login.php" ) {
-		wp_redirect( site_url() );
+	if ($pagenow === "wp-login.php") {
+		wp_redirect(site_url() . '/login');
 	}
 
 }
-##################################################################################
-add_action( 'init', 'red_wp_admin' );
 
+add_action('init', 'red_wp_admin');
+##################################################################################
 add_filter( 'style_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999 );
 add_filter( 'script_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999 );
 new AuthorConfigsNiceName();
