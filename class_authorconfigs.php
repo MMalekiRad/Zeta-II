@@ -115,7 +115,7 @@ class AuthorConfigsNiceName
          */
         function lwp_2629_insert_nicename_input($user)
         {
-            if (Initializer::anjdf_is_admin()) {
+            if (is_admin()) {
                 $content = ob_get_clean();
 
                 // Find the proper class, try to be future proof
@@ -151,7 +151,7 @@ class AuthorConfigsNiceName
 
             // Return if not update
             if (!$update) return;
-            if (is_admin() && Initializer::anjdf_is_admin()):
+            if (is_admin()):
                 if (empty($_POST['user_nicename'])) {
                     $errors->add(
                         'empty_nicename',
