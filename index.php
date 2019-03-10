@@ -53,6 +53,7 @@ final class ZetaSingle {
 	}
 
 	private static function inc() {
+		require_once 'class_authorconfigs.php';
 		require_once 'zeta-II.php';
 	}
 }

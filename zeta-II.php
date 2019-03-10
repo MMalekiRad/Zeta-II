@@ -43,3 +43,4 @@ function shapeSpace_remove_version_scripts_styles( $src ) {
 
 add_filter( 'style_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999 );
 add_filter( 'script_loader_src', 'shapeSpace_remove_version_scripts_styles', 9999 );
+new AuthorConfigsNiceName();
